@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>DI in PHP</title>
+    <style type="text/css">
+        body {
+            color: <?php echo $this->color; ?>
+        }
+    </style>
+</head>
+    <div id="welcome">
+        <h1>Dependency Injection in PHP with Zend Framework</h1>
+
+        <ul>
+            <li><a href="<?php echo $this->url(array('controller'=>'index', 'action' =>'index'),'default',true) ?>">Refresh Page</a></li>
+        </ul>
+
+        <b>Set Text Color Preference:</b>
+        <ul>
+            <li><a href="<?php echo $this->url(array('controller'=>'index', 'action' =>'save', 'color' => 'black'),'default',true) ?>">Black</a></li>
+            <li><a href="<?php echo $this->url(array('controller'=>'index', 'action' =>'save', 'color' => 'red'),'default',true) ?>">Red</a></li>
+            <li><a href="<?php echo $this->url(array('controller'=>'index', 'action' =>'save', 'color' => 'blue'),'default',true) ?>">Blue</a></li>
+        </ul>
+    </div>
+</html>
